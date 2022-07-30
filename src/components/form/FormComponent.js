@@ -30,7 +30,7 @@ const FormComponent = ({info, setInfo, handleSubmit}) => {
   return (
     <Grid
       textAlign="center"
-      verticalAlign="middle"
+      verticalalign="middle"
       direction="column"
       style={{ width: "300" }}
     >

@@ -17,6 +17,7 @@ import EditIcon from '@mui/icons-material/Edit';
 const Contacts = ({editUser}) => {
  const {isLoading,contactList}=useFetch();
 
+
   return (
     <div>
       <h2 className="contact-header">Contacts</h2>
@@ -51,18 +52,18 @@ const Contacts = ({editUser}) => {
                   // Bilgiler geldiği zaman aşağıya yazılacak kodlar çalışsın
                   (
                     contactList?.map((item,index)=>(
-
-                      <TableRow>
-                      <TableCell textAlign="center">{item.username.toUpperCase()}</TableCell>
-                      <TableCell textAlign="center">{item.phoneNumber}</TableCell>
-                      <TableCell textAlign="center">{item.gender}</TableCell> 
-                      <TableCell textAlign="center" onClick={()=>DeleteUser(item.id)}>
+                    
+                    <TableRow>
+                      <TableCell textalign="center">{item.username.toUpperCase()}</TableCell>
+                      <TableCell textalign="center">{item.phoneNumber}</TableCell>
+                      <TableCell textalign="center">{item.gender}</TableCell> 
+                      <TableCell textalign="center" onClick={()=>DeleteUser(item.id)}>
                         <DeleteIcon/>
                       </TableCell> 
-                      <TableCell textAlign="center"
+                      <TableCell textalign="center"
                      onClick={()=>editUser(
                       item.id, item.username,item.phoneNumber,item.gender
-                    )}>
+                     )}>
                         <EditIcon/>
                       </TableCell> 
                      </TableRow>      
