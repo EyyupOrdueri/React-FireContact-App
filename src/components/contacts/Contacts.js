@@ -51,9 +51,9 @@ const Contacts = ({editUser}) => {
                   ) :
                   // Bilgiler geldiği zaman aşağıya yazılacak kodlar çalışsın
                   (
-                    contactList?.map((item,index)=>(
+                    contactList?.map((item)=>(
                     
-                    <TableRow>
+                    <TableRow key ={Math.floor(Math.random() * 1000)}>
                       <TableCell textalign="center">{item.username.toUpperCase()}</TableCell>
                       <TableCell textalign="center">{item.phoneNumber}</TableCell>
                       <TableCell textalign="center">{item.gender}</TableCell> 
@@ -70,12 +70,7 @@ const Contacts = ({editUser}) => {
 
                     ))
                   )
-
-            }
-           
-              
-
-             
+            }             
 
           </TableBody>
         </Table>

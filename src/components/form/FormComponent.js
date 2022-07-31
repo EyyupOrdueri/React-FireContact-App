@@ -31,7 +31,7 @@ const FormComponent = ({info, setInfo, handleSubmit}) => {
     <Grid
       textAlign="center"
       verticalalign="middle"
-      direction="column"
+      containerdirection="column"
       style={{ width: "300" }}
     >
 
